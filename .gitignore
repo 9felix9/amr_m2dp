@@ -1,0 +1,15 @@
+ground_truth/
+velodyne_data/
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+*.zip
+*.tar
+*.gz
+*.7z
+*.iso
+*.bin

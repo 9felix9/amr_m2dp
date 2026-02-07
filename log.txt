@@ -1,0 +1,13 @@
+Evaluation of 2012-01-15
+[main] 33500/33612 done | rate=34.19 scans/s | median_io=50.0ms | median_m2dp=198.2ms | median_total=247.6ms | time_elapsed_total=979.8s
+[main] Saved:
+  file: /Users/felix/Projects/amr_hw3/velodyne_data/2012-01-15/m2dp_descriptors_2012-01-15.npz
+  utimes: (33612,)
+  descriptors: (33612, 192)
+
+Evaluation of 2012-01-22
+[main] 26000/26145 done | rate=12.64 scans/s | median_io=48.9ms | median_m2dp=189.5ms | median_total=237.1ms | time_elapsed_total=2057.3s
+[main] Saved:
+  file: /Users/felix/Projects/amr_hw3/velodyne_data/2012-01-22/m2dp_descriptors_2012-01-22.npz
+  utimes: (26145,)
+  descriptors: (26145, 192)

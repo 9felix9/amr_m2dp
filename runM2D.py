@@ -4,6 +4,15 @@ import glob
 import multiprocessing as mp
 from concurrent.futures import ProcessPoolExecutor
 
+
+############################
+
+# If this script is executed the M2DP algorithm calculated the descriptor vectors of all pointclouds of the given session. 
+# As this one is a highly computational task the multiprocessing and pool executer packages from python are used to make the execution run parallel
+# results are saved as npz files - efficient numpy files
+
+############################
+
 # ============================================================
 # Toggle: Threads begrenzen (FAST) vs nicht begrenzen (SLOW)
 # ============================================================
@@ -13,7 +22,7 @@ if LIMIT_BLAS_THREADS:
     os.environ["OMP_NUM_THREADS"] = "1"
     os.environ["MKL_NUM_THREADS"] = "1"
     os.environ["OPENBLAS_NUM_THREADS"] = "1"
-    os.environ["VECLIB_MAXIMUM_THREADS"] = "1"   # macOS Accelerate
+    os.environ["VECLIB_MAXIMUM_THREADS"] = "1"   
     os.environ["NUMEXPR_NUM_THREADS"] = "1"
 
 import numpy as np
